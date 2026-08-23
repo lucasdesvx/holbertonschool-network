@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Configure local DNS resolution for localhost and facebook.com
+# Changes the home IP configuration for localhost and facebook.com
 sudo sed -i '/localhost/d' /etc/hosts
 sudo sed -i '/facebook.com/d' /etc/hosts
 echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts > /dev/null
